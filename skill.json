@@ -1,0 +1,38 @@
+{
+  "name": "genpark-self-correcting-reflection-token-backtrack-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Self-correcting reflection token backtrack engine detecting hallucination loops and executing autonomous error correction in LLM streams.",
+  "author": "genpark",
+  "category": "llm-reasoning",
+  "tags": [
+    "reflection-tuning",
+    "error-backtracking",
+    "self-correction",
+    "reasoning-tokens",
+    "reflection-ai"
+  ],
+  "inputs": {
+    "input_prompt": {
+      "type": "string"
+    },
+    "max_reflection_tokens": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "reflection_run_id": {
+      "type": "string"
+    },
+    "detected_hallucinations_self_corrected": {
+      "type": "integer"
+    },
+    "mathematical_derivation_pass_rate_pct": {
+      "type": "number"
+    },
+    "final_verified_solution_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
